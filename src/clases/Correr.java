@@ -13,7 +13,7 @@ import tipo.superficie.PlazaGaraje;
 
 
 
-public class Programa {
+public class Correr {
 
   
     public static void main(String... args) {
