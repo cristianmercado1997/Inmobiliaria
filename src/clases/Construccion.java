@@ -5,18 +5,18 @@ import clases.Enum.TipoConstruccion;
 
 public abstract class Construccion extends Inmueble {
 
-    protected TipoConstruccion tipo;
+    protected TipoConstruccion estilo;
 
     protected Construccion(String ubicacion, int metrosCuadrados, TipoConstruccion tipo) {
         super(ubicacion, metrosCuadrados);
-        this.tipo = tipo;
+        this.estilo = tipo;
     }
 
-     public void setTipo(TipoConstruccion tipo) {
-        this.tipo = tipo;
+     public void setEstilo(TipoConstruccion estilo) {
+        this.estilo = estilo;
     }
-    public TipoConstruccion getTipo() {
-        return tipo;
+    public TipoConstruccion getEstilo() {
+        return estilo;
     }
 
    

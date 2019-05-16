@@ -15,6 +15,17 @@ public class vivienda extends Construccion {
         this.numHabitaciones = numHabitaciones;
         this.piso = piso;
     }
+    public void setPiso(int piso) {
+        this.piso = piso;
+    }
+    
+    public int getNumHabitaciones() {
+        return numHabitaciones;
+    }
+
+    public void setNumHabitaciones(int numHabitaciones) {
+        this.numHabitaciones = numHabitaciones;
+    }
 
     
     public int getPrecio() {
@@ -29,29 +40,18 @@ public class vivienda extends Construccion {
         return piso;
     }
 
-    public void setPiso(int piso) {
-        this.piso = piso;
-    }
     
-    public int getNumHabitaciones() {
-        return numHabitaciones;
-    }
-
-    public void setNumHabitaciones(int numHabitaciones) {
-        this.numHabitaciones = numHabitaciones;
-    }
-
    
     
     @Override
     public void muestra() {
-        System.out.println("--------- Vivienda -------------");
-        System.out.println("Tipo de Construccion: " + tipo.name()); 
+        System.out.println("*********** VIVIENDA **************");
+        System.out.println("Tipo de Construccion: " + estilo.name()); 
         System.out.println("Ubicacion: " + ubicacion);
+        System.out.println("Tipo de Construccion: " + estilo.name());
         System.out.println("Precio: "+ precio);
         System.out.println("Area *metrosCuadrados*: " + metrosCuadrados);
-        System.out.println("Tipo de Construccion: " + tipo.name());
         System.out.println("Numero de Habitaciones: " + numHabitaciones);
-        System.out.println("--------------------------------");
+        System.out.println("**********************************");
     }
 }

@@ -7,13 +7,14 @@ import java.util.List;
 
 public interface Agencia {
     
-    LinkedList<Inmueble> inmueblesVenta(int precio);
+  
     LinkedList<LocalComercial> localesSegundaMano(int area);    
+      LinkedList<Inmueble> inmueblesVenta(int costo);
     
 
     
-    boolean añadirInmueble(Inmueble inmueble);
+
     boolean añadirAlquilerInmueble(Inmueble inmueble);
-
+    boolean añadirInmueble(Inmueble inmueble);
     int solarRusticos();
 }

@@ -11,14 +11,14 @@ public class LocalComercial extends Construccion {
 
     @Override
     public void muestra() {
-        System.out.println("------ Local Comercial:--------");
+        System.out.println("*********** LOCAL C:*************");
         
         System.out.println("Precio del Local: " + precio());
         System.out.println("Area *metrossCuadrados*: " + metrosCuadrados);
-        System.out.println("Tipo de Construccion: " + tipo.name());
+        System.out.println("Tipo de Construccion: " + estilo.name());
         System.out.println("Ubicacion: " + ubicacion);
         
-        System.out.println("-------------------------------");
+        System.out.println("***********************************");
         
     } 
     public int precio() {

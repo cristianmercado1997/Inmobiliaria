@@ -20,24 +20,7 @@ public class Inmobiliaria implements Agencia {
         this.lventas = new ArrayList<>();
         this.lAlquileres = new ArrayList<>();
     }
-
-    @Override
-    public boolean añadirInmueble(Inmueble inmueble) {
-        if (!lventas.contains(inmueble)) {
-            if ((inmueble instanceof Solares) || (inmueble instanceof vivienda)) {
-                lventas.add(inmueble);
-                return true;
-            } else {
-                System.out.println("El Inmueble No es valido para las ventas ");
-            }
-        }
-
-        return false;
-    }
-
-   
-
-    @Override
+       @Override
  public LinkedList<Inmueble> inmueblesVenta(int precio) {
         LinkedList<Inmueble> listaInmuebles = new LinkedList<>();
         
@@ -57,6 +40,24 @@ public class Inmobiliaria implements Agencia {
 
         return listaInmuebles;
     }
+    
+    @Override
+    public boolean añadirInmueble(Inmueble inmueble) {
+        if (!lventas.contains(inmueble)) {
+            if ((inmueble instanceof Solares) || (inmueble instanceof vivienda)) {
+                lventas.add(inmueble);
+                return true;
+            } else {
+                System.out.println("El Inmueble No es valido para las ventas ");
+            }
+        }
+
+        return false;
+    }
+
+   
+
+ 
  @Override
     public boolean añadirAlquilerInmueble(Inmueble inmueble)  {
         if (!lAlquileres.contains(inmueble)) {

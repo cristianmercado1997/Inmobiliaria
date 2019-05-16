@@ -23,13 +23,12 @@ public class PlazaGaraje extends Superficie {
     
     @Override
     public void muestra() {
-        System.out.println("---------- Plaza Garaje -----------");
+        System.out.println("*********** PLAZA ***********");
         
         System.out.println("Tipo de Garaje: " + tipo.name());
-        System.out.println("Precio: " + super.precio());
         System.out.println("Ubicacion: " + ubicacion);
         System.out.println("Area *metrosCuadrados* : " + metrosCuadrados);
-        
-        System.out.println("-----------------------------------");
+        System.out.println("Precio: " + super.precio());
+        System.out.println("**********************************");
     }
 }

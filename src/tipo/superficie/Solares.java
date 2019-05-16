@@ -22,13 +22,13 @@ public class Solares extends Superficie {
 
     @Override
     public void muestra() {
-        System.out.println("------------  Solar  --------------");
+        System.out.println("************** SOLAR  **************");
         
         System.out.println("Zona: " + zona.name());
-        System.out.println("Ubicacion: " + ubicacion);
         System.out.println("Area *metroscuadrados*: " + metrosCuadrados);
+        System.out.println("Ubicacion: " + ubicacion);
         System.out.println("Precio: " + super.precio());
         
-        System.out.println("-----------------------------------");
+        System.out.println("***************************************");
     }
 }
